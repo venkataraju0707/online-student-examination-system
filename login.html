@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login portal</title>
+<script>
+        function togglePassword() {
+            var password = document.getElementById("password");
+            password.disabled = !password.disabled;
+        }
+</script>
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+</head>
+<body class="subbody">
+<h1 class="hea">...LOGIN HERE...</h1>
+<div class="lrow">
+<div class="login-col">
+<div class="submain">
+<div class="login">
+<h2 class="subh2">..Faculty Login Here..</h2>
+<form  id="login" method="post">
+<label>User Name : </label>
+<br>
+<input type="text" name="Uname" id="name" placeholder="Enter your User Name">
+<br><br>
+<label for="password">Password : </label>
+<br>
+<input type="password" name="password" id="password" placeholder="Enter your Password">
+<br><br>
+<label>Subject of teaching: </label>
+<br>
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="year" value="1" id="1st">
+&nbsp;
+<span id="1st">CSE</span>
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="year" value="2" id="2nd">
+&nbsp;
+<span id="2nd">ECE</span>
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="year" value="3" id="3rd">
+&nbsp;
+<span id="3rd">MECH</span>
+&nbsp;&nbsp;&nbsp;
+<br><br>
+<input type="submit" value="Submit" id="submit" onclick="togglePassword()">
+</form>
+</div>
+</div>
+</div>
+<div class="vl"></div>
+<div class="logi-col">
+<div class="submain">
+<div class="login">
+<h2 class="subh2">..Student Login Here..</h2>
+<form  id="login" method="post">
+<label>User Name : </label>
+<br>
+<input type="text" name="Uname" id="name" placeholder="Enter your User Name">
+<br><br>
+<label for="password">Password : </label>
+<br>
+<input type="password" name="password" id="password" placeholder="Enter your Password">
+<br><br>
+<label>Year of studying: </label>
+<br>
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="year" value="1" id="1st">
+&nbsp;
+<span id="1st">1st</span>
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="year" value="2" id="2nd">
+&nbsp;
+<span id="2nd">2nd</span>
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="year" value="3" id="3rd">
+&nbsp;
+<span id="3rd">3rd</span>
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="year" value="4" id="4th">
+&nbsp;
+<span id="4th">4th</span>
+<br><br>
+<input type="submit" value="Submit" id="submit" onclick="togglePassword()">
+</form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login portal</title>
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+<script>
+        function togglePassword() {
+            var password = document.getElementById("password");
+            password.disabled = !password.disabled;
+        }
+</script>
+</head>
+<body class="subbody">
+<h1 class="hea">...CONTACT FOR QUERIES...</h1>
+<p class="coqu">If any queries regarding the functioning of the website you can contact to the admin of the website
+    by the following numbers :</p>
+<ul class="coli">
+<li>Joshna-phno:9346767726</li>
+<li>sridhar-phno:</li>
+<li>Venkatraju-phno:9014813438</li>
+<li>Manohar-phno:7569793423</li>
+</ul>
+<p class="coqu">Leave a feedback on your experience below:</p>
+<div class="main">
+<div class="logins">
+ <form id="logins" method="POST">
+ <br>
+ <label>Comment:</label>
+ <br>
+ <textarea name="Message" placeholder="Message" id="comment" requried></textarea><br>
+ <input type="submit" value="Submit" id="submit" onclick="togglePassword()">
+</form>
+</div>
+</div>
+</div>
